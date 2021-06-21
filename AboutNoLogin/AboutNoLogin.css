@@ -1,0 +1,316 @@
+@font-face{
+    font-family: "title";
+    src: url('../Font/eastwest3d.ttf');
+}
+@font-face{
+    font-family: "main_font";
+    src: url('../Font/Imnova\ St.ttf');
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: main_font;
+}
+.cb{
+    clear: both;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #E2DCC7;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 1px;
+    background-color: #575352;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #E2DCC7;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+header{
+    position: fixed;
+    background: #1a1b1c;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 96px;
+}
+.left_area h3{
+    margin-top: 18px;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: #FC4A4A;
+}
+.login_btn{
+    padding: 20px;
+    background: #19B3D3;
+    text-decoration: none;
+    float: right;
+    margin-top: -110px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+.login_btn:hover{
+    background: #0D9DBB;
+}
+.sidebar{
+    background: url('../Home/image/side_bg.png');
+    background-repeat: no-repeat;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    top: 4%;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    width: 186px;
+    height: 618px;
+    transition: 0.5s;
+    transition-property: right;
+}
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 65px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+#loginbtn{
+    margin-top: 173px;
+}
+#loginbtn a{
+    margin-right: 45px;
+    margin-top: -70px;
+    padding: 0;
+    text-align: center;
+    height: 60px;
+    width: 80px;
+}
+.sidebar1 a:hover{
+    background: url('../Home/image/side_on_bg.png');
+    background-repeat: no-repeat;
+    width: 250px;
+    margin-left: 20px
+}
+.gotop{
+    position: absolute;
+    width: 116px;
+    height: 57px;
+    cursor: pointer;
+}
+.sidebar img.icon{
+    padding-right: 10px;
+}
+label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    right: 120px;
+    padding-top: 15px;
+    font-size: 20px;
+    margin:  5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+label img:hover{
+    color: #575352;
+}
+#check:checked ~ .sidebar{
+    right: -190px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+.header{
+    background: #1a1b1c;
+    width: 100%;
+    height: 135px;
+}
+#cover{
+    background: url('../About/Image/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    transition: 0.5s;
+}
+#profile{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#profile h1#titleabout{
+    margin: 0;
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: 5px;
+    color: white;
+}
+#profile thead tr td{
+    margin: 0;
+    padding: 20px;
+    border: 10px solid #FCDC4A;
+    border-radius: 20px;
+    border-right: 0.5;
+    box-sizing: border-box;
+}
+#profile tbody tr td{
+    margin: 0;
+    padding: 20px;
+}
+#profile tbody tr td:hover{
+    border: 10px solid #FCDC4A;
+    border-radius: 20px;
+}
+#profile tbody tr td img{
+    width: 20vw;
+    height: 30vw;
+}
+#profile tbody tr td img:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+tr.saitama h1{
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 5px;
+    color: white;
+}
+td#atribut{
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1.5vw;
+}
+td#atribut h1{
+    border: 1px solid #FC4A4A;
+    font-weight: normal;
+    margin: 5px;
+}
+td#atribut div#hp{
+    background-color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+td#atribut div#atk{
+    background-color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+td#atribut div#str{
+    background-color: #c92706;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+td#atribut div#agi{
+    background-color: #04c94c;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+td#atribut div#int{
+    background-color: #0459c9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+td.skill{
+    text-align: left;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1.2vw;
+}
+td.skill h1{
+    font-weight: normal;
+    margin: 5px;
+}
+td.skill ul{
+    font-weight: normal;
+    margin: 5px;
+}
+td#rank h1{
+    color: white;
+    font-size: 10vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+tr#desc td h1{
+    color: white;
+    font-size: 1.5vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 100px;
+}
+tr#desc:hover{
+    background: #484d49;
+}
+#check{
+    display: none;
+}
+.table{
+    background-color: #000;
+    font-family: creator;
+    color: white;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.1vw;
+}
+.table table{
+    border: 2px solid white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.table table:hover{
+    background-color: #ff7300;
+}
+.table table tr td img{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+h2#about{
+    letter-spacing: 2px;
+    text-align: center;
+}
+h2#episode{
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 0;
+}
+.footer{
+    position: relative;
+    height: auto;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #22242A;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+.footer p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 5px;
+    font-size: 1vw;
+    letter-spacing: 3px;
+    padding-right: 2%;
+    margin: 0;
+    text-align: center;
+}

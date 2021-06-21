@@ -1,0 +1,248 @@
+@font-face{
+    font-family: "title";
+    src: url('../Font/eastwest3d.ttf');
+}
+@font-face{
+    font-family: "main_font";
+    src: url('../Font/Imnova\ St.ttf');
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: main_font;
+}
+.cb{
+    clear: both;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #E2DCC7;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 1px;
+    background-color: #575352;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #E2DCC7;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+header{
+    position: fixed;
+    background:  #1a1b1c;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 96px;
+}
+.left_area h3{
+    margin-top: 18px;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: #FC4A4A;
+}
+.logout_btn{
+    padding: 20px;
+    background: #19B3D3;
+    text-decoration: none;
+    float: right;
+    margin-top: -110px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+.logout_btn:hover{
+    background: #0D9DBB;
+}
+.sidebar{
+    background: url('./image/side_bg.png');
+    background-repeat: no-repeat;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    top: 4%;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    width: 186px;
+    height: 618px;
+    transition: 0.5s;
+    transition-property: right;
+}
+.sidebar center{
+    padding-top: 55px;
+    padding-left: 40px;
+}
+.sidebar center h4{
+    margin-bottom: 0;
+    letter-spacing: 4px;
+}
+.sidebar .profile_image{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+
+}
+.sidebar h4{
+    color: #fff;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 65px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+.sidebar1 a:hover{
+    background: url('./image/side_on_bg.png');
+    background-repeat: no-repeat;
+    width: 250px;
+    margin-left: 20px
+}
+.gotop{
+    position: absolute;
+    width: 116px;
+    height: 57px;
+    cursor: pointer;
+}
+.sidebar img.icon{
+    padding-right: 10px;
+}
+label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    right: 120px;
+    padding-top: 15px;
+    font-size: 20px;
+    margin:  5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+label img:hover{
+    color: #575352;
+}
+#check:checked ~ .sidebar{
+    right: -190px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+.header{
+    background: #1a1b1c;
+    width: 100%;
+    height: 135px;
+}
+#cover{
+    background: url('./image/top_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+.tes{
+    padding-top: 35vw;
+}
+.coming h1.comingsoon{
+    text-align: center;
+    font-size: 10vw;
+    margin: 0;
+    color: #FC4A4A;
+    text-shadow: 5px 5px black;
+}
+.coming h1.comingsoon:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.soon h1.season:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.soon h1.season{
+    text-align: right;
+    padding-right: 43vw;
+    font-size: 10vw;
+    margin: 0;
+    color: white;
+    text-shadow: 5px 5px black;
+}
+#isi{
+    background: url('./image/news_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+#check{
+    display: none;
+}
+.table tbody tr td:hover{
+    border: 1px solid #FCDC4A;
+    border-radius: 20px;
+}
+.table{
+    background-color: #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 1.4vw;
+}
+h2#episode{
+    font-family: main_font;
+    letter-spacing: 5px;
+}
+.table thead tr td{
+    font-size: 1.4vw;
+    padding: 10px;
+    border: 2px solid #FCDC4A;
+    box-sizing: border-box;
+}
+.table tbody tr td{
+    font-size: 1vw;
+    padding: 10px;
+}
+.footer{
+    position: relative;
+    height: auto;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #22242A;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+.footer p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 5px;
+    font-size: 1vw;
+    letter-spacing: 3px;
+    padding-right: 2%;
+    margin: 0;
+    text-align: center;
+}
